@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div style="margin-top: 10px;" class="child" *ngIf="car">
+    <div class="rowss">
+      <div class="col-12">
+        <img class="profile" style="height: 130px; width: 200px; border-radius: 10px;" [src]="processedImage" alt="Car Image">
+      </div>
+      <div class="col-md-6">
+        <h2 style="cursor: pointer; color: rgb(111, 82, 138);">
+          {{ car.brand }} - {{ car.name }}
+        </h2>
+        <p>{{ car.description }}</p>
+        <hr>
+        <h5>
+          Price: <b>{{ car.price }}</b> - Color: <b>{{ car.color }}</b> - Transmission: <b>{{ car.transmission }}</b> - Type: <b>{{ car.type }}</b>
+        </h5>
+        <hr>
+        <div class="form-group">
+          <label for="fromDate">From Date:</label>
+          <input type="date" class="form-control" id="fromDate" name="fromDate" [(ngModel)]="fromDate" required>
+        </div>
+        <div class="form-group">
+          <label for="toDate">To Date:</label>
+          <input type="date" class="form-control" id="toDate" name="toDate" [(ngModel)]="toDate" required>
+        </div>
+        <button class="btn btn-primary" (click)="bookCar()">Book</button> <!-- Remove 'data' argument -->
+      </div>
+    </div>
+  </div>
+</div>

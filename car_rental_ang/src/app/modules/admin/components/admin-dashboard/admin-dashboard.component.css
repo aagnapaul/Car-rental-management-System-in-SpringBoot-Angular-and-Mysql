@@ -1,0 +1,33 @@
+.car-card {
+    margin-bottom: 20px;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .car-title {
+    cursor: pointer;
+    color: rgb(111, 82, 138);
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .car-description {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .car-details {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+  }
+  
+  .action-buttons .car-button {
+    margin-right: 10px;
+  }

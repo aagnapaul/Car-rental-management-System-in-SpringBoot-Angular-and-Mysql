@@ -1,0 +1,32 @@
+.custom-bg {
+    background-color: #f8f9fa; /* Custom background color */
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .post-car-form {
+    background-color: #fff; /* White background color for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle 3D effect */
+  }
+  
+  .form-title {
+    color: #6f528a; /* Title color */
+  }
+  
+  .label {
+    font-weight: bold; /* Bold labels */
+  }
+  
+  .car-form input[type="text"],
+  .car-form input[type="number"],
+  .car-form select,
+  .car-form textarea,
+  .car-form input[type="file"] {
+    border-radius: 5px; /* Rounded corners for form inputs */
+  }
+  
+  .car-form button[type="submit"] {
+    border-radius: 5px; /* Rounded corners for submit button */
+  }

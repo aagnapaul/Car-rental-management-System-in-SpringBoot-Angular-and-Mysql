@@ -1,0 +1,20 @@
+.card {
+    border-radius: 15px;
+  }
+  
+  .card-img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+  }
+  
+  .card-text {
+    font-size: 18px;
+  }

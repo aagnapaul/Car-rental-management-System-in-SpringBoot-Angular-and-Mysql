@@ -1,0 +1,52 @@
+<!-- search-car.component.html -->
+<div class="search-container">
+    <h2 class="search-heading">Search Cars</h2>
+    <form class="search-form" (ngSubmit)="searchCars()">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Brand" [(ngModel)]="searchCar.brand" name="brand">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Type" [(ngModel)]="searchCar.type" name="type">
+        </div>
+        <div class="form-group">
+            <select class="form-control" [(ngModel)]="searchCar.transmission" name="transmission">
+                <option value="">Select Transmission</option>
+                <option value="Automatic">Automatic</option>
+                <option value="Manual">Manual</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Color" [(ngModel)]="searchCar.color" name="color">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10 mb-4" *ngFor="let car of cars">
+            <div class="card shadow-sm">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img class="card-img" [src]="car.processedImg" alt="Car Image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h2 class="card-title" style="cursor: pointer; color: rgb(111, 82, 138);">{{ car.brand }} - {{ car.name }}</h2>
+                    <p class="card-text" style="font-size: 16px; color: #333;">{{ car.description }}</p>
+                    <hr>
+                    <p class="card-text" style="font-size: 16px; color: #555;">
+                      <span style="font-weight: bold;">Price:</span> {{ car.price }} |
+                      <span style="font-weight: bold;">Color:</span> {{ car.color }} |
+                      <span style="font-weight: bold;">Transmission:</span> {{ car.transmission }} |
+                      <span style="font-weight: bold;">Type:</span> {{ car.type }}
+                    </p>
+                    <hr>
+                    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<p class="no-results" *ngIf="cars && cars.length === 0">No cars found matching the search criteria.</p>
+</div>
+   

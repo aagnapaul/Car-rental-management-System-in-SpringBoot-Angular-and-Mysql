@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10 mb-4" *ngFor="let car of cars">
+      <div class="card shadow-sm car-card">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img class="card-img" [src]="car.processedImg" alt="Car Image">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title car-title">{{ car.brand }} - {{ car.name }}</h2>
+              <p class="card-text car-description">{{ car.description }}</p>
+              <hr>
+              <p class="card-text car-details">
+                <span class="detail-label">Price:</span> {{ car.price }} |
+                <span class="detail-label">Color:</span> {{ car.color }} |
+                <span class="detail-label">Transmission:</span> {{ car.transmission }} |
+                <span class="detail-label">Type:</span> {{ car.type }}
+              </p>
+              <hr>
+              <div class="action-buttons text-right">
+                <button class="btn btn-sm btn-primary car-button" [routerLink]="['/admin/car',car.id]">Update</button>
+                <button class="btn btn-sm btn-danger car-button" (click)="deleteCar(car.id)">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

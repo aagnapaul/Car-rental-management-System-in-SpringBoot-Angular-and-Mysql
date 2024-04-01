@@ -1,0 +1,40 @@
+<!-- Navigation for Admin -->
+<div *ngIf="isAdminLoggedIn" class="container-fluid">
+  <div class="row row1">
+    <div class="col-12" id="text1">
+      <h4>LoggedIn Admin</h4>
+      <a style="color: white;" class="btn  mr-2 link3" routerLink="/admin-dashboard">Dashboard</a>
+      <a style="color: white;" class="btn  mr-2 link4" routerLink="/car">Post Car</a>
+      <a style="color: white;" class="btn  mr-2 link4" routerLink="/bookings">Bookings</a>
+      <a style="color: white;" class="btn  mr-2 link4" routerLink="/search-car">Search</a>
+      <button style="color: white;" class="btn  link5" (click)="onLogout()">Logout</button>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation for Customer -->
+<div *ngIf="isCustomerLoggedIn" class="container-fluid">
+  <div class="row row1">
+    <div class="col-12" id="text1">
+      <h4>LoggedIn Customer</h4>
+      <a style="color: white;" class="btn  mr-2 link3" routerLink="/customer-dashboard">Dashboard</a>
+      <a style="color: white;" class="btn  mr-2 link4" routerLink="/my-bookings">My bookings</a>
+      <a style="color: white;" class="btn  mr-2 link4" routerLink="/searchcar">Search</a>
+      <button style="color: white;" class="btn  link5" (click)="onLogout()">Logout</button>
+    </div>
+  </div>
+</div>
+
+<!-- Default Navigation for Unauthorized Users -->
+<div *ngIf="!isAdminLoggedIn && !isCustomerLoggedIn" class="container-fluid">
+  <div class="row row1">
+    <div class="col-12" id="text1">
+     <h4>Car rental Service</h4>
+      <a style="color: white;" class="btn  mr-2 link1" routerLink="/register">SignUp</a>
+      <a style="color: white;" class="btn  link2" routerLink="/login">Login</a>
+    </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

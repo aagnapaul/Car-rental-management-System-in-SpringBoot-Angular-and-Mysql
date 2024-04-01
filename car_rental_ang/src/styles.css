@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+.row1{
+    width: 100%;
+    background-color: rgb(3, 3, 117);
+  
+}
+#text1{
+    font-size: 10px;
+    color: azure;
+    margin-left: 20px;
+}
+
+
+.link1{
+    margin-left: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.link2{
+   padding-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+
+
+}
+.link3{
+  margin-left: 65%;
+  font-size: 20px;
+  text-decoration: none;
+}
+.link4{
+  padding-left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+.link5{
+  padding-left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+
+#form{    width: 500px;
+    margin-top: 30px;
+    background-color: azure;
+    position: absolute;
+    margin-left: 30%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px -7px rgba(0,0,0.1);
+
+}
+.form-group{
+    padding-top: 15px;
+    width: 100%;
+}
+.reg{
+    margin-top: 35px;
+    margin-left: 30%;
+}
+#log2{
+    width: 500px;
+    margin-top: 30px;
+    background-color: azure;
+    position: absolute;
+    margin-left: 30%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px -7px rgba(0,0,0.1);
+}
+
+#log{
+    text-align: center;
+}
+
+
+.custom-bg {
+    background-color: #f0f0f0; /* Replace with your desired gray color */
+  }
+  .child{
+    padding: 20px;
+    width: 780px;
+    background-color: white;
+    box-shadow: 1px 1px 15px -7px rgba(0,0,0.1);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rowss{
+    padding: 30px;
+    width: 780px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    margin-bottom: 20px;
+  }
+  
+  .booking-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .booking-table th, .booking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .booking-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .booking-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .booking-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .no-bookings {
+    color: red;
+    font-weight: bold;
+  }
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .action-btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .approve-btn {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .reject-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .action-btn:hover {
+    opacity: 0.8;
+  }
+  

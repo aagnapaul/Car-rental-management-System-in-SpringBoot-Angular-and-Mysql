@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10 col-sm-12 mb-4" *ngFor="let car of cars">
+      <div class="card shadow-sm">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img class="card-img" [src]="car.processedImg" alt="Car Image">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" style="cursor: pointer; color: rgb(111, 82, 138);">{{ car.brand }} - {{ car.name }}</h2>
+              <p class="card-text">{{ car.description }}</p>
+              <hr>
+              <p class="card-text">
+                <span class="font-weight-bold">Price:</span> <b>{{ car.price }}</b> -
+                <span class="font-weight-bold">Color:</span> <b>{{ car.color }}</b> -
+                <span class="font-weight-bold">Transmission:</span> <b>{{ car.transmission }}</b> -
+                <span class="font-weight-bold">Type:</span> <b>{{ car.type }}</b>
+              </p>
+              <hr>
+              <div class="text-right">
+                <!-- Updated button to use routerLink -->
+                <a class="btn btn-success" [routerLink]="['/customer/book', car.id]" (click)="logNavigation()">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
